@@ -71,3 +71,10 @@ header p {
   display: inline-block;
   animation: pop-out 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
+
+#disqus_thread {
+  margin-top: 4rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
