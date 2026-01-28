@@ -3,46 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>두쫀쿠 파티</title>
-  <meta property="og:title" content="두쫀쿠 파티">
-  <meta property="og:description" content="버튼을 누르면 새로운 경험이 펼쳐집니다.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stockyoutube.bmwater1627.workers.dev/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="두쫀쿠 파티">
-  <meta name="twitter:description" content="버튼을 누르면 새로운 경험이 펼쳐집니다.">
+  <title>AI 유튜브 분석</title>
+  <meta property="og:title" content="AI 유튜브 분석">
+  <meta property="og:description" content="AI가 최신 금융/경제 유튜브를 요약하고 분석합니다.">
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <div class="site-container">
     <header>
-      <h1>A new experience awaits.</h1>
-      <p>Simply press the button.</p>
+      <h1>AI 유튜브 분석</h1>
+      <p>버튼을 누르면 지정된 금융 채널의 최신 영상을 분석합니다.</p>
     </header>
     <main>
-      <button id="ddu-jjon-ku-btn">두쫀쿠</button>
-      <div id="chestnut-container" class="hidden">
-        <span class="chestnut">🌰</span>
+      <button id="analyze-btn">분석 시작</button>
+      <div id="loader" class="hidden">
+        <div class="spinner"></div>
+        <p>최신 영상을 가져와 분석중입니다. <br>이 과정은 몇 분 정도 소요될 수 있습니다.</p>
       </div>
-
-      <div id="disqus_thread"></div>
+      <div id="results-container">
+        <!-- Analysis results will be injected here by JavaScript -->
+      </div>
     </main>
   </div>
   <script defer type="text/javascript" src="/main.js"></script>
-  <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    var disqus_config = function () {
-    this.page.url = 'https://stockyoutube.bmwater1627.workers.dev/';  // Replace PAGE_URL with your page's canonical URL variable
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://stockyoutube.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
